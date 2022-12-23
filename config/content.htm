@@ -1,14 +1,26 @@
 <h1>About</h1>
-<p>cmsite: wcms use <a href="https://github.com/mdecycu/cmsimde">https://github.com/mdecycu/cmsimde</a> as submodule</p>
+<p><a href="https://mdecp2022.github.io/site-41123144/content/Brython.html?src=https://gist.githubusercontent.com/41123144/2f37f8141bc9f63ebdaa289892742993/raw/0797986dc4935ef1d19eed67ccdffb0fef719094/W5_HW">w5_ex1</a></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false"># 導入亂數模組
+import random
+# 導入字串模組
+import string
+# 利用 def 關鍵字定義函式
+# 函式的輸入變數可以設定初始值
+def password_generator(size=4, chars=string.ascii_lowercase + string.digits):
+    # 函式內以多行註解說明函式功能
+    """Generate random password
+    """
+    # 利用 return 關鍵字將所產生的亂數字串傳回
+    return ''.join(random.choice(chars) for _ in range(size))
+# 建立一個變數與隨後的字串對應
+pass_string = "abcdefghkmnpqrstuwxyz123456789"
+# 利用重複迴圈呼叫 password_generator() 函式 10 次
+for i in range(10):
+    print(password_generator(4, pass_string))</pre>
+<p>cmsite: wcms use <a href="https://github.com/mdecycu/cmsimde">https://github.com/mdecycu/cmsimde</a> as submodule</p><h1>cp2022</h1>
 <h1>HW</h1>
-<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">'''
-f=c*9/5+32
-c=(f-32)*5/9
-'''
-c=input("請輸入攝氏溫度值")
-#print(type(c))
-c=float(c)
-print(c,c*9/5+32)</pre><p><a href="https://mdecp2022.github.io/site-41123144/content/Brython.html?src=https://gist.githubusercontent.com/41123144/2d438a3a88235552814668d47c2d9bf5/raw/a8f1fed41383857c5b8284702df0465e9dfc2bac/W13_temp_ex1.py">ex1</a></p><h2>W13</h2>
+<p></p>
+<h2>W13</h2>
 <p><a href="https://mdecp2022.github.io/site-41123144/content/Brython.html?src=https://gist.githubusercontent.com/41123144/2d438a3a88235552814668d47c2d9bf5/raw/a8f1fed41383857c5b8284702df0465e9dfc2bac/W13_temp_ex1.py">ex1</a></p>
 <pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">'''
 f=c*9/5+32
@@ -27,7 +39,8 @@ c=input("請輸入攝氏溫度值")
 #print(type(c))
 c=float(c)
 print("你輸入的攝氏溫度: " + str(c),"等於華氏溫度: " + str(c*9/5+32))</pre>
-<pre><br/><br/></pre><h2>W12</h2>
+<pre><br/><br/></pre>
+<h2>W12</h2>
 <p><a href="https://mdecp2022.github.io/site-41123144/content/Brython.html?src=https://gist.githubusercontent.com/41123144/2bb4824da2e588fb0a497e8af46c7178/raw/cdcec2e1993d9bd778c3d54aa04f39280ea175ef/W12_HW_ex1.py">ex1</a></p>
 <pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false"># Brython 的 input() 可以接受輸入提示字串, 跳出瀏覽器輸入表單後, 將輸入內容以字串取回
 user_input_temp = input("請輸入攝氏溫度值:")
@@ -45,11 +58,7 @@ Fahrenheit = (user_input_temp*9/5) + 32
 # 到這裡, Fahrenheit 資料型別為浮點數, 而 user_input_temp 在第 8 行也轉為浮點數
 # 要將兩個浮點數與字串相加, 都必須透過 str() 轉為字串
 print("攝氏 " + str(user_input_temp) + " 度, 等於華氏 " + str(Fahrenheit) + " 度.")</pre>
-<p></p><h3>ex1</h3>
-<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false"># Brython 的 input() 可以接受輸入提示字串, 跳出瀏覽器輸入表單後, 將輸入內容以字串取回
-user_input_temp = input("請輸入攝氏溫度值:")
-# 接著列出 user_input_temp 變數的資料型別
-print(type(user_input_temp))</pre>
+<p></p>
 <p></p>
 <h1>Brython</h1>
 <p><a href="https://en.wikipedia.org/wiki/Python_(programming_language)">https://en.wikipedia.org/wiki/Python_(programming_language)</a></p>
